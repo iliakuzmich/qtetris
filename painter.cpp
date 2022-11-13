@@ -11,7 +11,7 @@ void allBlack(MainWindow &window){
             window.colorizeBig(i, j , Qt::black);
         }
     }
-    for (int i = 0; i < 5; i++){
+   for (int i = 0; i < 5; i++){
         for (int j = 0; j < 5; j++){
             window.colorizeSmall(i, j , Qt::black);
         }
