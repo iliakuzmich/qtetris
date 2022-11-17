@@ -45,7 +45,7 @@ heap::heap(){
 
 void heap::delstring(){
     std::vector<bl>::iterator it;
-    for (int i = 0; i < 21; i++){
+    for (int i = 0; i < 20; i++){
         if (lines[i] == 10){ //если строка полностью заполнена
             for (it = dots.begin(); it < dots.end(); it++){//запускаем цикл по всем элементам
                 if (it->y == i){//если У точки равен У заполненной строки
