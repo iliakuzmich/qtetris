@@ -5,25 +5,20 @@ painter::painter(){
 
 }
 
-void allBlack(MainWindow &window){
-    for (int i = 0; i < 21; i++){
-        for (int j = 0; j < 11; j++){
+void painter::allBlack(MainWindow &window){
+    for (int i = 0; i < 20; i++){ // переделать на подсчет строк
+        for (int j = 0; j < 10; j++){
             window.colorizeBig(i, j , Qt::black);
         }
     }
-   for (int i = 0; i < 5; i++){
-        for (int j = 0; j < 5; j++){
+   for (int i = 0; i < 4; i++){
+        for (int j = 0; j < 4; j++){
             window.colorizeSmall(i, j , Qt::black);
         }
     }
 }
 
-
-
-void paintBig(std::vector<dot> &Blocks, MainWindow &window){ //Крч, помнишь в том семе мы как то делали
-                                                             //темлейтную функцию где была сортировка по убываюнию и по возрастанию
-                                                             //в зависимости от того че передаем и это было без if
-                                                             // вот тут надо тоже самое
+void painter::paintBig(std::vector<dot> &Blocks, MainWindow &window){
     int len = Blocks.size();
     allBlack(window);
     for(int i = 0; i < len; i++){
@@ -31,7 +26,7 @@ void paintBig(std::vector<dot> &Blocks, MainWindow &window){ //Крч, помн�
     }
 }
 
-void paintSmall(std::vector<dot> &Blocks, MainWindow &window){
+void painter::paintSmall(std::vector<dot> &Blocks, MainWindow &window){
     int len = Blocks.size();
     allBlack(window);
     for(int i = 0; i < len; i++){

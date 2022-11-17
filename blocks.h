@@ -28,7 +28,7 @@ struct bl{
 
 class heap{
 private:
-    int lines[20]; //проверка заполнения строк ЗЫ врзможно херовая идея
+    int lines[20]; //проверка заполнения строк ЗЫ врзможно плохая идея
     void delstring();
     std::vector<bl> dots;
 public:

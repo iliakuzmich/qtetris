@@ -3,7 +3,7 @@
 #include "painter.h"
 #include <QApplication>
 
-//а еще это говно надо починить)))
+//а еще это надо починить)))
 
 int main(int argc, char *argv[])
 {
