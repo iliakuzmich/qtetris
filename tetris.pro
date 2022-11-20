@@ -10,12 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     blocks.cpp \
+    gameplay.cpp \
     main.cpp \
     mainwindow.cpp \
     painter.cpp
 
 HEADERS += \
     blocks.h \
+    gameplay.h \
     mainwindow.h \
     painter.h
 

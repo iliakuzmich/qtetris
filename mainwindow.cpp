@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "gameplay.h"
+
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
 
     ui->setupUi(this);
@@ -16,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
     ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->tableWidget_2->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-
+    sc = 0;
 }
 
 MainWindow::~MainWindow(){
@@ -31,5 +33,16 @@ void MainWindow::colorizeBig(size_t x, size_t y, QColor color){
 void MainWindow::colorizeSmall(size_t x, size_t y, QColor color){
     ui->tableWidget_2->setItem(x, y , new QTableWidgetItem);
     ui->tableWidget_2->item(x, y)->setBackground(color);
+}
+
+void MainWindow::score(){
+    sc += 100 * ui->spinBox->value();
+    ui->label_3->setText(QString::number(sc));
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+
 }
 

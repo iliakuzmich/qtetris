@@ -9,8 +9,8 @@ class painter:public MainWindow
 {
 public:
     painter();
-    void paintBig(std::vector<dot> &Blocks, MainWindow &window);
-    void paintSmall(std::vector<dot> &Blocks, MainWindow &window);
+    void paintBig(heap &Blocks, MainWindow &window);
+    void paintSmall(dot Blocks, MainWindow &window);
     void allBlack(MainWindow &window);
 };
 

@@ -51,22 +51,6 @@
      <number>10</number>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>390</y>
-      <width>113</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -94,6 +78,9 @@
     </property>
    </widget>
    <widget class="QTableWidget" name="tableWidget">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -101,6 +88,12 @@
       <width>371</width>
       <height>531</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
     </property>
     <property name="autoScroll">
      <bool>false</bool>
@@ -137,6 +130,9 @@
     </attribute>
    </widget>
    <widget class="QTableWidget" name="tableWidget_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -178,6 +174,19 @@
     <attribute name="verticalHeaderHighlightSections">
      <bool>false</bool>
     </attribute>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>400</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

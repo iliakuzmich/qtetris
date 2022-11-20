@@ -18,18 +18,22 @@ void painter::allBlack(MainWindow &window){
     }
 }
 
-void painter::paintBig(std::vector<dot> &Blocks, MainWindow &window){
-    int len = Blocks.size();
-    allBlack(window);
-    for(int i = 0; i < len; i++){
-        window.colorizeBig(Blocks[i].getX(), Blocks[i].getY() , Blocks[i].getColor());
+void painter::paintBig(heap &Blocks, MainWindow &window){
+    for(int i = 0; i < 20; i++){
+        for (int j = 0; j < 10; j++){
+            window.colorizeBig(i, j , Blocks.heapDots[i][j]);
+        }
     }
 }
 
-void painter::paintSmall(std::vector<dot> &Blocks, MainWindow &window){
-    int len = Blocks.size();
-    allBlack(window);
-    for(int i = 0; i < len; i++){
-        window.colorizeSmall(Blocks[i].getX(), Blocks[i].getY() , Blocks[i].getColor());
-    }
+//void painter::paintSmall(std::vector<dot> &Blocks, MainWindow &window){
+//    int len = Blocks.size();
+//    allBlack(window);
+//    for(int i = 0; i < len; i++){
+//        window.colorizeSmall(Blocks[i].getX(), Blocks[i].getY() , Blocks[i].getColor());
+//    }
+//}
+
+void painter::paintSmall(dot Blocks, MainWindow &window){
+    window.colorizeSmall(2, 2, Blocks.color);
 }

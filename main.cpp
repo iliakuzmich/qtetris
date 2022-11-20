@@ -1,9 +1,6 @@
 #include "mainwindow.h"
-#include "blocks.h"
-#include "painter.h"
-#include <QApplication>
 
-//а еще это надо починить)))
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {
@@ -11,19 +8,32 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    std::vector<dot> cho_narisovat;
+//    heap cho_narisovat;
 
-    dot first = dot(1, 3);
-    dot second = dot(4, 2);
-    dot third = dot(7, 7);
+//    cho_narisovat.heapDots[5][0] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][1] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][2] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][3] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][4] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][5] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][6] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][7] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][8] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[5][9] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[4][6] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
+//    cho_narisovat.heapDots[6][6] = QColor(rand()%5 * 50,rand()%5 * 50,rand()%5 * 50);
 
-    cho_narisovat.push_back(first);
-    cho_narisovat.push_back(second);
-    cho_narisovat.push_back(third);
+//    painter Painter;
 
-    painter Painter;
+//    Painter.paintBig(cho_narisovat, w);
 
-    Painter.paintBig(cho_narisovat, w);
+//    cho_narisovat.delstring(w);
+
+//    Painter.paintBig(cho_narisovat, w);
+
+    gameplay StartGame(w);
+
+
 
     return a.exec();
 }
