@@ -18,13 +18,13 @@ public:
     ~MainWindow();
     void colorizeBig(size_t x, size_t y, QColor color);
     void colorizeSmall(size_t x, size_t y, QColor color);
-    void allBlack();
     void score();
     int sc;
 protected:
     Ui::MainWindow *ui;
 
 private slots:
+    void to_Draw();
     void on_pushButton_clicked();
 };
 

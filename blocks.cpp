@@ -20,7 +20,7 @@ dot::dot(){
 //}
 
 void dot::go_down(heap &Heap){
-    if(Heap.heapDots[this->x][this->y + 1] == QColor(0,0,0)){
+    if((Heap.heapDots[this->x][this->y + 1] == QColor(0,0,0)) ||(this->y != 19)){
         y += 1;
     }
     else{
@@ -51,6 +51,19 @@ heap::heap(){
             heapDots[i][j] = QColor(0 ,0 ,0);
         }
     }
+}
+
+bool heap::isTop(){
+    int k = 0;
+    for (int i = 0; i < 10; i++){
+        if (heapDots[0][i] != QColor(0,0,0)){
+            k++;
+        }
+    }
+    if (k < 0){
+        return true;
+    }
+    return false;
 }
 
 void heap::delstring(MainWindow &window){

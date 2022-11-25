@@ -40,6 +40,11 @@ void MainWindow::score(){
     ui->label_3->setText(QString::number(sc));
 }
 
+void MainWindow::to_Draw()
+{
+
+}
+
 
 void MainWindow::on_pushButton_clicked()
 {

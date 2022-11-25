@@ -5,7 +5,7 @@
 #include <QKeyEvent>
 #include <QTimer>
 
-class gameplay
+class gameplay:public QObject
 {
 public:
     gameplay(MainWindow &window);

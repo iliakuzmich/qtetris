@@ -10,6 +10,7 @@ public:
     heap();
     std::deque<std::deque<QColor>> heapDots;
     void delstring(MainWindow &window);
+    bool isTop();
 };
 
 class dot{
@@ -22,7 +23,7 @@ public:
     void go_left(heap &Heap);
     void go_right(heap &Heap);
     void go_down(heap &Heap);
-    void go_realy_down(heap &Heap);
+    //void go_realy_down(heap &Heap);
 };
 
 #endif // BLOCKS_H
